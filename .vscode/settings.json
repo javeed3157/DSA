@@ -1,6 +1,10 @@
 {
     "java.project.sourcePaths": [
         "Patterns",
-        "Maths"
+        "Maths",
+        "Arrays",
+        "Search",
+        "Algorithms",
+        "Sorting"
     ]
 }
