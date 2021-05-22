@@ -1,3 +1,5 @@
+//Time:O(n^2)
+//Space:O(1)
 public class Insertion {
     public static int[] inser(int a[]){
         int n=a.length;
