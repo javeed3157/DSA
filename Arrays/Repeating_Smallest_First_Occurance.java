@@ -6,28 +6,38 @@ public class Repeating_Smallest_First_Occurance {
         for(int i=0;i<ar.length;i++){
             ar[i]=-1;
         }
+        boolean found=false;
         for(int i=0;i<n;i++){
             if(ar[a[i]] !=-1){
                 minind=Math.min(minind,ar[a[i]]);
+                found=true;
             }
             else{
-                ar[a[i]]=1;
+                ar[a[i]]=i;
             }
+        }
+        if(found==false){
+            return -1;
         }
         return minind+1;
         //Through Brute Force
-        // for(int i=0;i<n;i++){
-        //     for(int j=i+1;j<n;j++){
-        //         if(a[i]==a[j]){
-        //             ind=Math.min(ind,i);
-        //         }
-        //     }
-        // }
-        // return ind+1;
+    //     boolean found=false;
+    //     for(int i=0;i<n;i++){
+    //         for(int j=i+1;j<n;j++){
+    //             if(a[i]==a[j]){
+    //                 minind=Math.min(minind,i);
+    //                 found=true;
+    //             }
+    //         }
+    //     }
+    //     if(found==false){
+    //         return -1;
+    //     }
+    //     return minind+1;
     }
     public static void main(String[] args) {
-        int arr[]={1,5,3,4,3,5,6};
-        int k=7;
+        int arr[]={2};
+        int k=1;
         System.out.println(srsfo(arr,k));
     }
 }
