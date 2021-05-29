@@ -8,8 +8,8 @@ public class Subarr_adds_to_givensum {
         int end=-1;
         int j=0;
         int i=0;
-        while(j<a.length && currsum+a[j]>sum){
-            sum+=a[j];
+        while(j<a.length && currsum+a[j]<=sum){
+            currsum+=a[j];
             j++;
         }
         if(currsum==sum){
