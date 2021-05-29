@@ -1,5 +1,5 @@
+//Google,Facebook,Amazon,Visa
 public class Subarr_adds_to_givensum {
-
     public static void main(String[] args) {
         int a[]={1,2,3,7,5};
         int sum=12;
