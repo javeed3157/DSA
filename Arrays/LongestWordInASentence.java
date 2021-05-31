@@ -6,24 +6,31 @@ public class LongestWordInASentence {
         String s=sc.nextLine();
         char[] arr=new char[s.length()];
         int currlen=0,maxlen=0;
-        String str="";
+        int cind=0;
+        int aind=0;
         for(int i=0;i<s.length();i++){
             arr[i]=s.charAt(i);
         }
         for(int i=0;i<s.length();i++){
             if(arr[i] != ' '){
                 currlen+=1;
-                str+=arr[i];
-                maxlen=Math.max(maxlen,currlen);
             }
             else{
-                // maxlen=Math.max(maxlen,currlen);
+                if(currlen>maxlen){
+                    maxlen=currlen;
+                    aind=cind;
+                }
+                cind=i+1;
                 currlen=0;
-                str="";
             }
         }
-        // maxlen=Math.max(maxlen,currlen);
+        if(currlen>maxlen){
+            maxlen=currlen;
+            aind=cind;
+        }
         System.out.println(maxlen);
-        System.out.println(str);
+        for(int i=0;i<maxlen;i++){
+            System.out.print(arr[i+aind]);
+        }
     }
 }
