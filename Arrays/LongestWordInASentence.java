@@ -32,5 +32,6 @@ public class LongestWordInASentence {
         for(int i=0;i<maxlen;i++){
             System.out.print(arr[i+aind]);
         }
+        sc.close();
     }
 }
