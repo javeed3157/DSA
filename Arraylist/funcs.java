@@ -1,5 +1,6 @@
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Arrays;
 public class funcs{
     public static void main(String[] args) {
         List<Integer> li=new ArrayList<Integer>();
@@ -14,8 +15,18 @@ public class funcs{
         List<Integer> li2=new ArrayList<Integer>();
         li2.add(30);
         li2.add(40);
-        li.addAll(li2);
+        li.addAll(li2);     
         // System.out.println(li.contains(20));
+        // li.contains(20);
+        // li.removeAll(li2);   (To remove some collction of elements from one list)
+        // li.isEmpty();
         System.out.println(li);
+        //Conversion of arraylist to array
+        Integer arr[]=new Integer[li.size()];
+        li.toArray(arr);
+        for(int i:arr){
+            System.out.print(i+" ");
+        }
+        // System.out.println(Arrays.toString(arr));
     }
 }
