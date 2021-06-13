@@ -1,6 +1,7 @@
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 public class funcs{
     public static void main(String[] args) {
         List<Integer> li=new ArrayList<Integer>();
@@ -27,6 +28,12 @@ public class funcs{
         for(int i:arr){
             System.out.print(i+" ");
         }
+        System.out.println();
         // System.out.println(Arrays.toString(arr));
+        //Using iterator we iterate
+        Iterator<Integer> it=li.iterator();
+        while(it.hasNext()){
+            System.out.print(it.next()+" ");
+        }
     }
 }
