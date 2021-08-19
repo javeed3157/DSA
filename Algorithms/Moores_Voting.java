@@ -1,4 +1,4 @@
-import java.util.Arrays;
+// import java.util.Arrays;
 //Time:O(n)
 //Space:O(1)
 public class Moores_Voting {
@@ -54,6 +54,8 @@ public class Moores_Voting {
         // return -1;
     // }
 
+    //Time:O(nlogn)
+    //Space:O(1)
     // public static int majority(int a[],int e){
     //     Arrays.sort(a);
     //     int c=1;
