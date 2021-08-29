@@ -27,6 +27,5 @@ public class MergeTwoSortedArrays {
         int a1[] = {3 ,27 ,38 ,43};
         int a2[] = {9 ,10 ,82};
         mTsA(a1, a2);
-        
     }
 }
