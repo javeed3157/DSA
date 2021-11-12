@@ -14,10 +14,12 @@ public class WrapperExample {
         System.out.println(obj.no);
         // obj=new check(100);//Reference of a final cant be reassigned
 
-        check o;
-        for(int i=0;i<1000000000;i++){
-            o=new check();
-        }        
+        //Garbage collection
+        // check o;
+        // for(int i=0;i<1000000000;i++){
+        //     o=new check();
+        // }   
+        System.out.println(obj);
 
     }
     static void swap(Integer a,Integer b){
@@ -34,8 +36,8 @@ class check{
     check(int no){
         this.no=no;
     }
-    @Override
-    protected void finalize() throws Throwable {
-        System.out.println("Object destroyed with this destructor");
-    }
+    // @Override
+    // protected void finalize() throws Throwable {
+    //     System.out.println("Object destroyed with this destructor");
+    // }
 }
