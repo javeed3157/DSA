@@ -15,6 +15,21 @@ public class shift {
             x^=a[i];
         }
         System.out.println(x);
+        //ith bit of a number
+        //mask=1<<(n-1)
+        int num=10;//1010
+        int n=3;//third bit of the number 10
+        int mask=1<<(n-1);
+        System.out.println(num & mask);//prints the ith bit of the number
+
+        //set the ith bit 
+        System.out.println(num | (1<<(n-1)));
+
+        //reset ith bit
+        //mask=!(1<<(n-1))
+        System.out.println(num & ~(1<<(n-1)));
+
+        //pos of right most set bit
         
     }
 }
