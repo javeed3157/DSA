@@ -15,6 +15,7 @@ public class shift {
             x^=a[i];
         }
         System.out.println(x);
+        
         //ith bit of a number
         //mask=1<<(n-1)
         int num=10;//1010
@@ -31,5 +32,6 @@ public class shift {
 
         //pos of right most set bit
         
+
     }
 }
