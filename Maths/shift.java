@@ -31,7 +31,12 @@ public class shift {
         System.out.println(num & ~(1<<(n-1)));
 
         //pos of right most set bit
-        
+        System.out.println(num & ~(num-1));
 
+        //Negative of a number (MSB(MostSignificantBit))-->It gives the number is pos or neg rem gives value of a number
+        //Here we have to find 2's complement (complement and add 1)
+        System.out.println(~(num)+1);
+
+        
     }
 }
