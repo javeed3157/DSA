@@ -1,3 +1,4 @@
+import java.lang.Integer;
 public class shift {
     public static void main(String[] args) {
         //a<<b=a*pow(2,b)
@@ -37,6 +38,7 @@ public class shift {
         //Here we have to find 2's complement (complement and add 1)
         System.out.println(~(num)+1);
 
+        //Range for n bits --> -2^(n-1) to 2^(n-1)-1
         
     }
 }
