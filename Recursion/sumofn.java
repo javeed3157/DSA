@@ -1,7 +1,7 @@
 public class sumofn{
     public static int sumn(int n){
-        if(n==0){
-            return 0;
+        if(n==1){
+            return 1;
         }
         else{
             return  n+sumn(n-1);
