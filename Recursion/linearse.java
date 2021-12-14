@@ -33,28 +33,28 @@ public class linearse {
         }
         return findall(a, t, i+1);
     }
-    static ArrayList<Integer> findalls(int a[],int t,int i,ArrayList<Integer> li){
+    static ArrayList<Integer> findalls(int a[],int t,int i,ArrayList<Integer> li2){
     //Here for same object is taken in each call and the diff references points towards the same obj
         if(i==a.length){
-            return li;
+            return li2;
         }
         if(a[i]==t){
-            li.add(i);
+            li2.add(i);
         }
-        return findalls(a, t, i+1,li);
+        return findalls(a, t, i+1,li2);
     }
     static ArrayList<Integer> findalls2(int a[],int t,int i){
-        ArrayList<Integer> li=new ArrayList<>();
+        ArrayList<Integer> li3=new ArrayList<>();
         //Here we are creating new arraylist in each call
             if(i==a.length){
-                return li;
+                return li3;
             }
             if(a[i]==t){
-                li.add(i);
+                li3.add(i);
             }
             ArrayList<Integer> ansfrombelowcalls=findalls2(a, t, i+1);
-            li.addAll(ansfrombelowcalls);
-            return li;
+            li3.addAll(ansfrombelowcalls);
+            return li3;
         }
 
     public static void main(String[] args) {
