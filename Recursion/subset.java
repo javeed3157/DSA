@@ -37,4 +37,16 @@ public class subset{
         left.addAll(right);
         return left;
     }
+    static ArrayList<String> subsdup(String p,String up){
+        if(up.isEmpty()){
+            ArrayList<String> li=new ArrayList<>();
+            li.add(p);
+            return li;
+        }
+        char ch=up.charAt(0);
+        ArrayList<String> left=subs(p+ch, up.substring(1));
+        ArrayList<String> right=subs(p, up.substring(1));
+        left.addAll(right);
+        return left;
+    }
 }
