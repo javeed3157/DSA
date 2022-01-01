@@ -1,4 +1,4 @@
-//Time:O(n*n!)
+//Time:O(n!)
 public class permutationstr {
     public static void permutations(String s,String permutate){
         if(s.length()==0){
