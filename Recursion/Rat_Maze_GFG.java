@@ -1,4 +1,6 @@
 import java.util.*;
+//Time:O(4^(m*n))
+//Space:O(m*n)
 public class Rat_Maze_GFG {
     public static ArrayList<String> findPath(int[][] m, int n) {
         ArrayList<String> l = new ArrayList<>();
