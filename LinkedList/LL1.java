@@ -1,5 +1,5 @@
-//Insert --> O(1)
-//Search --> O(n)
+// Insert --> O(1)
+// Search --> O(n)
 
 public class LL1{
     Node head;
@@ -16,7 +16,7 @@ public class LL1{
             size += 1;
         }
     }
-    //add first
+    // add first
     public void addFirst(String data){
         Node newNode = new Node(data);
         if(head == null){
@@ -28,7 +28,7 @@ public class LL1{
 
     }
 
-    //add first
+    // add Last
     public void addLast(String data){
         Node newNode = new Node(data);
         if(head == null){
@@ -42,7 +42,33 @@ public class LL1{
         currNode.next = newNode;
     }
 
-    //print list
+    // Insert at specified index
+    public void addInd(int ind, String data){
+        if(ind > size || ind < 0){
+            System.out.println("Invalid index");
+            return;
+        }
+        size+=1;
+
+        Node newNode = new Node(data);
+        if(head == null || ind == 0){
+            newNode.next = head;
+            head = newNode;
+            return;
+        }
+        Node curr = head;
+        for(int i = 1; i < size; i++){
+            if(i == ind){
+                Node temp = curr.next;
+                curr.next = newNode;
+                newNode.next = temp;
+                break;
+            }
+            curr = curr.next;
+        }
+    }
+
+    // print list
     public void printList(){
         if(head == null){
             System.out.println("List is empty");
@@ -56,7 +82,7 @@ public class LL1{
         System.out.println("null");
     }
 
-    //delete first
+    // delete first
     public void deleteFirst(){
         if(head == null){
             System.out.println("List is empty");
@@ -66,7 +92,7 @@ public class LL1{
         head = head.next;
     }
 
-    //delete last
+    // delete last
     public void deleteLast(){
         if(head == null){
             System.out.println("List is empty");
@@ -86,7 +112,32 @@ public class LL1{
         secondLast.next = null;
     }
 
-    //get size
+    // Insert at specified index
+    public void delInd(int ind){
+        if(head == null){
+            System.out.println("List is empty");
+            return;
+        }
+        if(ind > size || ind < 0){
+            System.out.println("Invalid index");
+            return;
+        }
+        size -= 1;
+        if(ind == 0){
+            head = head.next;
+            return;
+        }
+        Node currNode = head;
+        for(int i = 1; i < size; i++){
+            if(ind == i){
+                Node temp = currNode.next.next;
+                currNode.next = temp;
+                break;
+            }
+            currNode = currNode.next;
+        }
+    }
+    // get size
     public void getSize(){
         System.out.println(size);
         // int count = 0;
@@ -124,5 +175,11 @@ public class LL1{
         list.addFirst("this");
         list.printList();
         list.getSize();
+
+        list.addInd(3, "list");
+        list.printList();
+
+        list.delInd(2);
+        list.printList();
     }
 }
