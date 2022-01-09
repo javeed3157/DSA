@@ -112,7 +112,7 @@ public class LL1{
         secondLast.next = null;
     }
 
-    // Insert at specified index
+    // Delete at specified index
     public void delInd(int ind){
         if(head == null){
             System.out.println("List is empty");
