@@ -1,3 +1,5 @@
+// Time:O(n)
+// Space:O(1)
 class GfG {
     class Node {
         int data;
