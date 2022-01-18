@@ -1,4 +1,5 @@
 // Time:O(nlogn)
+// Space:O(n)
 public class Mergesort{
     public static void divide(int[] arr, int s, int e){
         if(s >= e){
