@@ -1,3 +1,5 @@
+// push, pop, peek takes O(1) time complexity
+
 public class Stack {
     Node head;
     private int size;
