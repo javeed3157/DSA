@@ -11,6 +11,7 @@
         "Strings",
         "Recursion",
         "LinkedList",
-        "Stack"
+        "Stack",
+        "Queue"
     ]
 }
