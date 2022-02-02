@@ -12,6 +12,7 @@
         "Recursion",
         "LinkedList",
         "Stack",
-        "Queue"
+        "Queue",
+        "DynamicProgramming"
     ]
 }
