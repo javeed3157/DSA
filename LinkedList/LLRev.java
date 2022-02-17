@@ -50,7 +50,7 @@ public class LLRev {
             prev = curr;
             curr = nextNode;
         }
-        head.next = null;
+        // head.next = null;
         head = prev;
     }
 
