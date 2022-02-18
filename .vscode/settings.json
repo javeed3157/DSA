@@ -13,6 +13,7 @@
         "LinkedList",
         "Stack",
         "Queue",
-        "DynamicProgramming"
+        "DynamicProgramming",
+        "Trees"
     ]
 }
